@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cv Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./animation.css">
+
+
+</head>
+<body>
+
+    <form class="resume-form">
+
+        <h1>Static And Dynamic Resume Builder <span>Create By Usama Muzammil</span> </h1>
+
+
+        <fieldset>
+
+            <div class="choose">
+                <input type="file" accept="jpg,img,png" required>
+            </div>
+
+<legend>Personal Information</legend>
+<label for="Name">Name</label>
+<input type="text" id="Name" placeholder="Enter Your Name" required>
+
+<label for="Email">Email</label>
+<input type="email" id="email" placeholder="Enter Your email" required>
+
+<label for="Tel">Tel</label>
+<input type="tel" id="Tel" placeholder="Enter Your Phone Number" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Education">Education</label>
+            <textarea name="Education" id="" rows="4" placeholder="Enter Your Education" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiance</legend>
+            <label for="Experiance">Experiance</label>
+            <textarea name="Experiance" id="" rows="4" placeholder="Enter Your Experiance" required></textarea>
+        </fieldset>
+
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="Skills">Skills</label>
+        <textarea name="Skills" id="" placeholder="Enter Your Skills" rows="4" required></textarea>
+    </fieldset>
+
+    <button>Genrate Resume</button>
+    <button>Download Cv</button>
+    <button>Share your Resume</button>
+
+    </form>
+
+    <br>
+
+    <!-- Dynamic Resume -->
+
+    <div class="resume-display">
+        <br><br>
+
+<!-- Your Resume Will Be Genrated Thanks For Using My Resume Builder -->
+
+    </div>
+
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+<script src="./main.js"></script>
+
+
+</html>
